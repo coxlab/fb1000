@@ -5,7 +5,7 @@ import data
 from svm_lbfgs import SVML2HuberLBFGS
 
 DATA_STRIDE = 5
-N_BAGS = 2
+N_BAGS = 32
 BAG_SIZE = 1e4
 
 
@@ -56,11 +56,7 @@ def main():
 
     # accuracy (unbalanced)
     acc = (y_pred == y_tst).mean()
-    print
-    print
     print 'Accuracy=%.2f' % acc
-    print
-    print
 
 if __name__ == '__main__':
     main()
