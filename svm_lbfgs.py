@@ -1,7 +1,5 @@
 import numpy as np
-
 from scipy.optimize import fmin_l_bfgs_b
-
 import theano
 from theano import tensor
 
